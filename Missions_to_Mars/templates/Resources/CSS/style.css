@@ -1,0 +1,35 @@
+.header {
+  text-align: center;
+  background-color: lightgray;
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+h1 {
+    color:  black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h2 {
+    color:  black;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+h3 {
+    color:  black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.row_spacing {
+  padding-top: 50px;
+}
+
+.row_centering {
+    text-align: center;
+    vertical-align: middle;
+    float: center;
+}
