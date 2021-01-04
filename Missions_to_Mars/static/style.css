@@ -34,6 +34,16 @@ h3 {
     float: center;
 }
 
-.hemisphere-image{
-    width: 450px;
+.hemisphere_image_left {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+}
+
+.hemisphere_image_right {
+    float: right;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
 }
