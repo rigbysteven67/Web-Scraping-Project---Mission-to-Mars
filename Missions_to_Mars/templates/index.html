@@ -68,28 +68,17 @@
             </div>
         </div>
           
-        <div class="row">
-            <div clas="col-md-6 hemisphere_image_left">
-                <h3>{{ mars_data['hemisphere_img_list'][0]['title'] | safe}}:</h3> 
-                <img src="{{ mars_data['hemisphere_img_list'][0]['img_url'] | safe }}" >
+        {% for hemisphere in mars_data.hemisphere_img_list %}
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="{{ hemisphere['img_url'] | safe }}" class="hemisphere_image">
+            <div class="caption">
+              <h3>{{ hemisphere['title'] | safe}}</h3>
             </div>
-            <div clas="col-md-6 hemisphere_image_right">
-                <h3>{{ mars_data['hemisphere_img_list'][1]['title'] | safe}}:</h3>
-                <img src="{{ mars_data['hemisphere_img_list'][1]['img_url'] | safe }}" >
-            </div>
+          </div>
         </div>
-        <div class="row">
-            <div clas='col-md-6 hemisphere_image_left'> 
-                <h3>{{ mars_data['hemisphere_img_list'][2]['title'] | safe}}:</h3> 
-                <img src="{{ mars_data['hemisphere_img_list'][2]['img_url'] | safe }}" >
-            </div>
-            <div clas="col-md-6 hemisphere_image_right">
-                <h3>{{ mars_data['hemisphere_img_list'][3]['title'] | safe}}:</h3> 
-                <img src="{{ mars_data['hemisphere_img_list'][3]['img_url'] | safe }}" >
-            </div>
-        </div>
-        </p>
-                
+        {% endfor %}
+              
     </div> <!--- end of page container --->
     
 </body>
