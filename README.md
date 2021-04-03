@@ -72,3 +72,5 @@ Used MongoDB with Flask templating to create a new HTML page that displays all o
 
 - - -
 
+![1](images/1.PNG)
+
